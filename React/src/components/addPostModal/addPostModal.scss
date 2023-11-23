@@ -1,0 +1,61 @@
+.addPostModal-container-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  z-index: 301;
+  font-weight: normal;
+  padding: 15px;
+
+  .addPostModal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    width: 400px;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+    position: relative;
+
+    .addPostModal-close {
+      position: absolute;
+      top: 7px;
+      right: 19px;
+      padding: 0px 5px 2px;
+      font-size: 24px;
+      background-color: #fff;
+      border: solid 1px #ccc;
+      border-radius: 4px;
+      transition: all linear 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #dadada;
+      }
+    }
+    .addPostModal-title {
+      margin-bottom: 10px;
+    }
+    .addPostModal-input {
+      font-size: 19px;
+    }
+
+    .addPostModal-textarea {
+      font-size: 16px;
+    }
+
+    .addPostModal-errText {
+      color: #e6a23c;
+      font-size: 14px;
+    }
+  }
+}

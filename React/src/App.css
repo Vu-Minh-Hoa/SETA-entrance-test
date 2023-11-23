@@ -1,0 +1,14 @@
+.App {
+  height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1000px;
+  }
+}
