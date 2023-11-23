@@ -4,7 +4,6 @@ import './postSection.scss';
 
 const PostSection = () => {
   const { posts } = useSelector((state) => state.post);
-  console.log(posts);
   return (
     <div className='postSection-container'>
       {posts.map((post) => (
